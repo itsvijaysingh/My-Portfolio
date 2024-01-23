@@ -49,9 +49,6 @@
                     <span class="logo-name">Vijay Singh</span>
                     <span>/></span>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation Menu">
-                    <i class="bi bi-list toggle-icon"></i>
-                </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarMenu">
                     <div class="offcanvas-header">
                         <a href="/" class="offcanvas-title navbar-brand logo" id="offcanvasNavbarMenu">
@@ -99,7 +96,7 @@
                         <button type="button" class="btn btn-light secondary-bg-btn">Portfolio <i class="bi bi-arrow-up-right-circle"></i></button>
                     </div>                    
                 </div>
-                <div class="portrait col-lg-5">
+                <div class="col-lg-5 portrait">
                     <div class="pic"></div>
                 </div>
             </div>
@@ -127,5 +124,30 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        // Function to set the theme and update UI
+        function setTheme(theme) {
+            document.body.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+            var switchThemeBtn = document.getElementById('switchTheme');
+            if (switchThemeBtn) {
+                switchThemeBtn.innerHTML = theme === 'dark' ?  '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-stars-fill"></i>';
+            }
+            console.log(`Switched to ${theme} theme`);
+        }
+
+        var currentTheme = localStorage.getItem('theme') || 'dark';
+        setTheme(currentTheme);
+    
+        // Event listener for the switch theme button
+        var switchThemeBtn = document.getElementById('switchTheme');
+        if (switchThemeBtn) {
+            switchThemeBtn.addEventListener('click', () => {
+                currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(currentTheme);
+            });
+        }
+    </script>
+    
 </body>
 </html>

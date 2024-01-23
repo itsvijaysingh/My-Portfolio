@@ -8,7 +8,6 @@
 }
 
 :root{
-    scroll-behavior: smooth;
     --font-family: 'Rubik', sans-serif;
     --primary-color: #415de6;
     --secondary-color: #e64157;
@@ -49,6 +48,39 @@ body{
     --text-color: #fff;
     --muted-text: #9a9a9a;
     --bg-color: #212121;
+    --btn-color: #fff;
+    --offcanvas-bg: rgba(0,0,0,0.9);
+    --offcanvas-border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Light Mode */
+[data-bs-theme="light"] {
+    position: relative;
+    color: rgb(255, 255, 255/1);
+    z-index: 0;
+}
+
+[data-bs-theme="light"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff url(/assets/images/light-bg.webp) 50% no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+    z-index: -1;
+}
+
+/* Light Mode styles */
+[data-bs-theme="light"] {
+    --text-color: #000;
+    --muted-text: #000;
+    --bg-color: #fff;
+    --btn-color: #fff;
+    --offcanvas-bg: rgba(215, 215, 215, 0.9);
+    --offcanvas-border-color: rgba(255, 255, 255, 0.2);
 }
 
 *::selection {
@@ -79,7 +111,7 @@ body{
 }
 
 .primary-bg-btn{
-    color: var(--text-color);
+    color: var(--btn-color);
     background-color: var(--primary-color);
     border: none;
     transition: var(--transition-default);
@@ -157,6 +189,14 @@ body{
     backdrop-filter: 16px;
 }
 
+@media (max-width: 767px) {
+    #switchTheme{
+        display: flex;
+        justify-content: end;
+        flex-grow: 1;
+    }
+}
+
 #header .navbar{
     backdrop-filter: 20px;
     padding: 15px 0;
@@ -172,7 +212,7 @@ body{
 }
 
 .offcanvas{
-    background-color: rgba(0,0,0,0.9);
+    background-color: var(--offcanvas-bg);
 }
 
 .offcanvas.show ul {
@@ -184,7 +224,7 @@ body{
     bottom: 15px; 
     padding: 10px 15px;
     transition: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--offcanvas-border-color);
   }
 
 .navbar-nav > li > .nav-link {
@@ -241,4 +281,23 @@ body{
 #hero .tagline{
     letter-spacing: 1.5px;
     color: var(--muted-text);
+}
+
+.portrait .pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 47vw;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/me.png);
+}
+
+@media (max-width: 576px) {
+    .portrait .pic {
+        width: 100vw;
+    }
 }
