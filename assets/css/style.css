@@ -293,7 +293,7 @@ body{
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url(/assets/images/me.png);
+    background-image: url(/assets/images/portrait.png);
 }
 
 @media (max-width: 576px) {
