@@ -180,6 +180,10 @@ body{
     background-image: var(--underline-gradient);
 }
 
+.section-heading{
+    font-family: 'Dancing Script',var(--font-family);
+}
+
 /*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
@@ -264,7 +268,7 @@ body{
 --------------------------------------------------------------*/
 #hero {
     position: relative;
-    padding: 160px 0 60px 0;
+    padding: 160px 0 50px 0;
     min-height: 100vh;
 }
 
@@ -283,7 +287,7 @@ body{
     color: var(--muted-text);
 }
 
-.portrait .pic {
+.hero-portrait .pic {
     position: absolute;
     right: 0;
     top: 0;
@@ -297,7 +301,29 @@ body{
 }
 
 @media (max-width: 576px) {
-    .portrait .pic {
+    .hero-portrait .pic {
         width: 100vw;
     }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about{
+    padding: 80px 0 80px 0;
+    background-image: url(https://assets-global.website-files.com/657ad20cc169eb09732a4171/657ad20cc169eb09732a4214_footer%20grid.png);
+    object-fit: contain;
+}
+.about-portrait{
+    padding: 30px 0 30px 0;
+}
+.about-portrait .pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px var(--primary-color);
+}
+#about .bio{
+   /* box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, -10px -10px 30px 4px rgba(0,0,0,.1),10px 10px 30px 4px rgba(45,78,255,.15); */
 }
