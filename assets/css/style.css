@@ -323,9 +323,10 @@ a:hover{
     background: var(--primary-gradient-color);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
-#hero .btn-showcase{
+#hero .btn-showcase {
     border-radius: 32px;
     border-color: #7042f88b;
     border-width: 1px;
@@ -334,19 +335,19 @@ a:hover{
     transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
 }
 
-#hero .btn-showcase i{
+#hero .btn-showcase i {
     font-size: 13px;
 }
 
-#hero .btn-showcase:hover{
+#hero .btn-showcase:hover {
     box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .536);
 }
 
-#hero .badge-button{
+#hero .badge-button {
     margin-bottom: 15px;
 }
 
-#hero .tagline{
+#hero .tagline {
     letter-spacing: 1.5px;
     color: var(--muted-text);
 }
@@ -363,11 +364,57 @@ a:hover{
     background-image: url(/assets/images/portrait.webp);
 }
 
-    @media (max-width: 576px) {
-        .hero-portrait .pic {
-            width: 100vw;
-        }
+@media (max-width: 576px) {
+    #hero {
+        padding: 35px 0px 0px 0px;
     }
+
+    .hero-portrait {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 170px;
+        height: 170px;
+        max-height: 170px;
+        margin: 0 auto;
+        border: solid 3px transparent;
+        border-radius: 50%;
+        background-image: var(--primary-gradient-color), radial-gradient(circle at top left, var(--primary-color),var(--secondary-color));;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+
+    .hero-portrait .pic {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(/assets/images/portrait.webp);
+    }
+
+    .hero-content{
+        margin-top: 35px;
+    }
+
+    #hero .btn-showcase {
+        font-size: 12px;
+    }
+
+    #hero .tagline {
+        font-size: 14px;
+        letter-spacing: 1.2px;
+    }
+
+    #hero .social-icons a{
+        font-size: 14px;
+        padding: 0px 5px 0px 5px;
+    }
+
+    #hero .call-to-action{
+        margin-top: 0px;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Things I Love Section
@@ -431,12 +478,15 @@ a:hover{
 }
 
 .about-portrait{
-    padding: 30px 0 30px 0;
+    display: flex;
+    padding: 30px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-portrait .pic{
-    width: 300px;
-    height: 300px;
+    width: 70%;
+    height: auto;
     border-radius: 0.5rem;
     object-fit: cover;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
@@ -448,6 +498,20 @@ a:hover{
     font-size: 15px;
     word-spacing: 5px;
 }
+
+    @media (max-width: 576px) {
+        .about-portrait{
+            display: flex;
+            padding: 30px 36px 30px 36px;
+        }
+        .about-portrait .pic {
+            width: 90%;
+        }
+        #about .bio{
+            font-size: 14px;
+            padding: 30px 15px 30px 15px;
+        }
+    }
 
 /*--------------------------------------------------------------
 # Skills Section
