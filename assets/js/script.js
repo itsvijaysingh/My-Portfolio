@@ -20,3 +20,38 @@ if (switchThemeBtn) {
         setTheme(currentTheme);
     });
 }
+
+// Fixed Header on Scroll
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 30) {
+        header.classList.add('fixed-top');
+    } else {
+        header.classList.remove('fixed-top');
+    }
+});
+
+//AOS Initiliaze
+AOS.init();
+
+//Testimonial Slider
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        nav:true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:2,
+            },
+            1170:{
+                items:3,
+            }
+        }
+    });
+});
