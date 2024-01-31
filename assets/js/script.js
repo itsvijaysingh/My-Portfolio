@@ -24,9 +24,9 @@ if (switchThemeBtn) {
 // Fixed Header on Scroll
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
-    if (window.scrollY > 30) {
+    if (window.scrollY > 30 && !header.classList.contains('fixed-top')) {
         header.classList.add('fixed-top');
-    } else {
+    } else if (window.scrollY <= 30 && header.classList.contains('fixed-top')) {
         header.classList.remove('fixed-top');
     }
 });
