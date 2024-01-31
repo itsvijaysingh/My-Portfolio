@@ -226,6 +226,26 @@ a:hover{
     color: var(--muted-text);
 }
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    backdrop-filter: blur(20px);
+    animation: fadeOutPreloader 1s linear 1s forwards;
+}
+
+@keyframes fadeOutPreloader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 /*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
@@ -250,6 +270,10 @@ a:hover{
 #header .navbar{
     backdrop-filter: 20px;
     padding: 15px 0;
+}
+
+#switchTheme:active{
+    border: none;
 }
 
 .navbar .toggle-icon{
