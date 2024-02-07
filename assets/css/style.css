@@ -272,10 +272,6 @@ a:hover{
     padding: 15px 0;
 }
 
-#switchTheme:active{
-    border: none;
-}
-
 .navbar .toggle-icon{
     color: var(--text-color);
     font-size: 28px;
@@ -331,6 +327,10 @@ a:hover{
 
 .navbar-nav > li > .nav-link:hover::after {
     width: 100%;
+}
+
+#switchTheme:active{
+    border: none;
 }
 
 /*--------------------------------------------------------------
