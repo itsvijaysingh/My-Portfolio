@@ -6,7 +6,7 @@
     if (switchThemeBtn) {
         switchThemeBtn.innerHTML = theme === 'dark' ?  '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-stars-fill"></i>';
     }
-    console.log(`Switched to ${theme} theme`);
+    //console.log(`Switched to ${theme} theme`);
 }
 
 var currentTheme = localStorage.getItem('theme') || 'dark';
@@ -26,8 +26,10 @@ window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
     if (window.scrollY > 30 && !header.classList.contains('fixed-top')) {
         header.classList.add('fixed-top');
+        document.getElementById('offcanvasNavbar').classList.add('fixedHeaderNavbar');
     } else if (window.scrollY <= 30 && header.classList.contains('fixed-top')) {
         header.classList.remove('fixed-top');
+        document.getElementById('offcanvasNavbar').classList.remove('fixedHeaderNavbar');
     }
 });
 
