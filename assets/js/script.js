@@ -21,8 +21,12 @@ if (switchThemeBtn) {
     });
 }
 
-// Fixed Header on Scroll
+//AOS Initiliaze
+AOS.init();
+
+// Fixed Header & back to top button on Scroll
 window.addEventListener('scroll', () => {
+    // fixed header
     const header = document.getElementById('header');
     if (window.scrollY > 30 && !header.classList.contains('fixed-top')) {
         header.classList.add('fixed-top');
@@ -31,10 +35,22 @@ window.addEventListener('scroll', () => {
         header.classList.remove('fixed-top');
         document.getElementById('offcanvasNavbar').classList.remove('fixedHeaderNavbar');
     }
+
+    //backtotop
+    const backToTopButton = document.getElementById("backToTopButton");
+    if (window.scrollY > 400 && backToTopButton.style.display === 'none') {
+        backToTopButton.style.display = 'block';
+    } else if (window.scrollY <= 400 && backToTopButton.style.display === 'block') {
+        backToTopButton.style.display = 'none';
+    }
 });
 
-//AOS Initiliaze
-AOS.init();
+
+//jumping to top function
+function scrollToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 //Testimonial Slider
 $(document).ready(function(){

@@ -974,3 +974,20 @@ a:hover{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/*--------- Back To Top ------------*/
+
+#backToTopButton{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    z-index: 999;
+    transition: var(--transition-default);
+}
+
+
+#backToTopButton:hover{
+    color: var(--primary-color);
+    transform: translate(0, -0.25rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
