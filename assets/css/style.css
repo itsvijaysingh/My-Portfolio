@@ -466,9 +466,10 @@ a:hover{
 --------------------------------------------------------------*/
 
 #things-i-love {
-    padding: 80px 0px;
+    padding: 90px 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
+    min-height: 100vh;
 }
 
 #things-i-love .card {
@@ -519,9 +520,10 @@ a:hover{
 # About Section
 --------------------------------------------------------------*/
 #about{
-    padding: 80px 0px;
+    padding: 100px 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
+    min-height: 100vh;
 }
 
 .about-portrait{
@@ -600,7 +602,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #skills{
-    padding: 80px 0px;
+    padding: 100px 0px;
+    min-height: 100vh;
 }
 
 .skill{
@@ -633,9 +636,10 @@ a:hover{
 --------------------------------------------------------------*/
 
 #tools{
-    padding: 80px 0px 80px 0px;
+    padding: 100px 0px 80px 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
+    min-height: 100vh;
 }
 
 .tool{
@@ -668,7 +672,7 @@ a:hover{
 --------------------------------------------------------------*/
 
 #timelines{
-    padding: 80px 0px 80px 0px;
+    padding: 100px 0px 80px 0px;
 }
 
 /*--------------------------------------------------------------
@@ -676,7 +680,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #projects{
-    padding: 80px 0px 80px 0px;
+    padding: 100px 0px 80px 0px;
+    min-height: 100vh;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
 }
@@ -790,7 +795,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #testimonials {
-    padding: 80px 0;
+    padding: 100px 0px;
+    min-height: 100vh;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
 }
@@ -878,7 +884,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #blogs{
-    padding: 80px 0;
+    padding: 100px 0px;
+    min-height: 100vh;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
 }
@@ -947,7 +954,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #contact{
-    padding: 80px 0;
+    padding: 100px 0;
+    min-height: 100vh;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
 }
