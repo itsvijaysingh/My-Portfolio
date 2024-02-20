@@ -13,6 +13,8 @@
     src: url('/assets/fonts/DancingScript-Medium.ttf') format('truetype');
 }
 
+
+/* Global Variables */
 :root{
     --font-family: 'Rubik', sans-serif;
     --primary-color: #415de6;
@@ -56,6 +58,7 @@ a:hover{
     background: #000 url(/assets/images/dark-bg.webp) 50% no-repeat;
     background-size: cover;
     filter: brightness(50%);
+    -webkit-filter: brightness(50%);
     z-index: -1;
 }
 
@@ -86,6 +89,7 @@ a:hover{
     background: #fff url(/assets/images/light-bg.webp) 50% no-repeat;
     background-size: cover;
     filter: brightness(90%);
+    -webkit-filter: brightness(90%);
     z-index: -1;
 }
 
@@ -281,6 +285,7 @@ a:hover{
 
 #header .navbar{
     backdrop-filter: 20px;
+    -webkit-backdrop-filter: 20px;
     padding: 15px 0;
 }
 
@@ -805,6 +810,7 @@ a:hover{
     -webkit-backdrop-filter: blur(20px);
 }
 
+/* Notch Icon for Testimonial Div */
 .testimonial .description:after{
     position: absolute;
     bottom: -11px;
@@ -816,6 +822,7 @@ a:hover{
     border-bottom: 1px solid rgba(144, 81, 227, .5);
     border-left: 1px solid rgba(144, 81, 227, .5);
     transform: skewY(-45deg);
+    -webkit-transform: skewY(-45deg);  
 }
 
 .testimonial .pic{
