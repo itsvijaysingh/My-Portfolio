@@ -124,6 +124,7 @@ a:hover{
     font-size: 18px;
     margin-right: 3px;
     transition: var(--transition-default);
+    -webkit-transition: var(--transition-default);
 }
 
 .social-icons a:hover{
@@ -140,6 +141,7 @@ a:hover{
     background-color: var(--primary-color);
     border: none;
     transition: var(--transition-default);
+    -webkit-transition: var(--transition-default);
 }
 
 .primary-bg-btn:hover{
@@ -154,6 +156,7 @@ a:hover{
     background-color: none;
     border-color: var(--primary-color);
     transition: var(--transition-default);
+    -webkit-transition: var(--transition-default);
 }
 
 .primary-outline-btn:hover{
@@ -268,6 +271,7 @@ a:hover{
 #header{
     background: transparent;
     transition: top 0.5s ease;
+    -webkit-transition: top 0.5s ease;
 }
 
 .fixed-top{
@@ -325,6 +329,7 @@ a:hover{
     font-size: 15px;
     border-bottom: none;
     transition: width 0.35s ease;
+    -webkit-transition: width 0.35s ease;
 }
 
 .navbar-nav > li > .nav-link.active::after {
@@ -346,6 +351,7 @@ a:hover{
     height: 2px;
     background-image: var(--underline-gradient);
     transition: width 0.35s ease;
+    -webkit-transition: width 0.35s ease;
 }
 
 .navbar-nav > li > .nav-link:hover::after {
@@ -378,6 +384,7 @@ a:hover{
     box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
+    -webkit-transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
 }
 
 #hero .btn-showcase i {
@@ -543,11 +550,13 @@ a:hover{
     box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
     -webkit-box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
     transition-duration: .5s;
+    -webkit-transition-duration: .5s;
 }
 
 .about-portrait:hover::before {
     transform: translate(-23px,-23px);
     transition-duration: .5s;
+    -webkit-transition-duration: .5s;
 }
 
 .about-portrait::after {
@@ -560,11 +569,13 @@ a:hover{
     box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
     -webkit-box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
     transition-duration: .5s;
+    -webkit-transition-duration: .5s;
 }
 
 .about-portrait:hover::after {
     transform: translate(35px,30px);
     transition-duration: .5s;
+    -webkit-transition-duration: .5s;
 }
 
 .about-portrait .pic{
@@ -711,6 +722,7 @@ a:hover{
     height: 2px;
     background-image: var(--underline-gradient);
     transition: width 0.35s ease;
+    -webkit-transition: width 0.35s ease;
 }
 
 .project-card .title:hover::after {
@@ -943,6 +955,7 @@ a:hover{
     height: 2px;
     background-image: var(--underline-gradient);
     transition: width 0.35s ease;
+    -webkit-transition: width 0.35s ease;
 }
 
 .article-card .read-more:hover::after {
@@ -1024,6 +1037,7 @@ a:hover{
     bottom: 0px;
     z-index: 999;
     transition: var(--transition-default);
+    -webkit-transition: var(--transition-default);
 }
 
 
