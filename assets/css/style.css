@@ -255,6 +255,7 @@ a:hover{
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     animation: fadeOutPreloader 1s linear 1s forwards;
+    -webkit-animation: fadeOutPreloader 1s linear 1s forwards;
 }
 
 @keyframes fadeOutPreloader {
@@ -316,6 +317,7 @@ a:hover{
     bottom: 15px; 
     padding: 10px 15px;
     transition: none;
+    -webkit-transition: none;
     border: 2px solid var(--offcanvas-border-color);
 }
 
@@ -773,6 +775,7 @@ a:hover{
     left: 0;
     border-radius: inherit;
     transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
 }
 
 .project-card .banner-container:hover .overlay {
