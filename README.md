@@ -16,7 +16,7 @@ Hi there! I'm Vijay, and this is my portfolio website code built with HTML, CSS,
 * **Real-World Showcase 💻:** Check out my actual projects!
 * **Optimized for Speed 🚀:**  SEO metadata, prefetching, and deferring for a snappy experience.
 * **Testimonials ✅:** Genuine reviews from friends and developers.
-* **SEO Optimed Metas** Just Replace The Content at <head>
+* **SEO Optimed** Just Replace The Content at <head>
 * **And More!** See the details below.
   
 ## **Technologies Used:**
