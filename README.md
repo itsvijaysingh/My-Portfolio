@@ -1,5 +1,10 @@
 # Web Developer Portfolio - Using HTML, CSS, Bootstrap & JS
 
+> See live demo: [https://itsvj.me](https://itsvj.me)
+
+![Developer Portoflio](https://github.com/itsvijaysingh/My-Portfolio/blob/main/Developer%20Portolio%20Website.png)
+
+
 Hi there! I'm Vijay, and this is my portfolio website code built with HTML, CSS, Bootstrap, and a touch of JavaScript. Let's dive into the features:
 
 > But, wait! Have any cool project ideas to share or need some work done? Just shoot me an email at hi@itsvj.me. Let's chat over a virtual coffee! 😊 And if you're wondering why you should consider working together, check out projects like **PfpFinder** (https://pfpfinder.com) (where you can find the best pfps - almost 50k+!), **Alt Text Generator** (https://alttext.tech/) (just upload an image to see what it is!), **Discord Lookup API** (https://github.com/itsvijaysingh/Discord-Lookup-API), and more! Check out my complete profile here: https://github.com/itsvijaysingh
@@ -13,12 +18,7 @@ Hi there! I'm Vijay, and this is my portfolio website code built with HTML, CSS,
 * **Testimonials ✅:** Genuine reviews from friends and developers.
 * **SEO Optimed Metas** Just Replace The Content at <head>
 * **And More!** See the details below.
-
-## Preview
-> See live demo: [https://itsvj.me](https://itsvj.me)
-
-![Developer Portoflio](https://github.com/itsvijaysingh/My-Portfolio/blob/main/Developer%20Portolio%20Website.png)
-
+  
 ## **Technologies Used:**
 
 * HTML, CSS, Bootstrap, JavaScript
