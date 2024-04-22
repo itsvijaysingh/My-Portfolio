@@ -1,6 +1,6 @@
 # Web Developer Portfolio - Using HTML, CSS, Bootstrap & JS
 
-> See live demo: [https://itsvj.me](https://itsvj.me)    | Feel free to use but *credit appreciated* and a ⭐ ;)
+> See live demo: [https://itsvj.me](https://itsvj.me)    |  Feel free to use but **credit appreciated** and a **⭐** to repo ;)
 
 ![Developer Portoflio](https://github.com/itsvijaysingh/My-Portfolio/blob/main/Developer%20Portolio%20Website.png)
 
